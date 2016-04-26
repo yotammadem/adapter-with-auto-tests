@@ -29,7 +29,7 @@ public class MyAdapterIT {
     @Test
     public void testUnprotectedResource(){
         RestTemplate restTemplate = new RestTemplate();
-        String response = restTemplate.getForObject(adapterURL+"/resource/unprotected/ttt", String.class);
-        Assert.assertEquals("Hello2: ttt", response);
+        String response = restTemplate.getForObject(adapterURL+"/resource/unprotected/name", String.class);
+        Assert.assertEquals("Hello: name", response);
     }
 }
