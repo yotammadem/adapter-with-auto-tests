@@ -11,5 +11,5 @@ mvn clean install adapter:deploy
 2. Run automated tests:
 
 ```
-mvn failsafe:verify
+mvn failsafe:integration-test failsafe:verify
 ```
