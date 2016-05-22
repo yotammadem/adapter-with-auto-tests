@@ -36,6 +36,6 @@ public class AdapterWithAutoTestsResource {
 	@GET
 	@OAuthSecurity(enabled = false)
 	public String unprotected(@PathParam("p") String param){
-		return "Hello: "+param;
+		return "Holla: "+param;
 	}
 }
