@@ -30,6 +30,6 @@ public class MyAdapterIT {
     public void testUnprotectedResource(){
         RestTemplate restTemplate = new RestTemplate();
         String response = restTemplate.getForObject(adapterURL+"/resource/unprotected/name", String.class);
-        Assert.assertEquals("Hello: name", response);
+        Assert.assertEquals("Holla: name", response);
     }
 }
